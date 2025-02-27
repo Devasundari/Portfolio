@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name ="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="website icon" href="/portfolio/icon.jpg">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/221dfbe793.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+<div id="header">
+    <div class="container"></div>
+      <nav>
+        <img src="d.jpeg" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#services">Services</a></li> -->
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-ellipsis-vertical" onclick="openmenu()"></i>
+      </nav>
+     <div class="headertext">
+        <p>JAVA Developer</p>
+        <h1>Hi,I'm<span>Devasundari</span><br>From Thanjavur</h1>
+     </div>
+</div>
+ <!--about-->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="a1.jpg">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p >I am currently pursuing a BE in Computer Science and Engineering(Honors) at Annamalai University, Chidambaram. 
+                I am an enthusiastic person who loves to gain knowledge and tackle new challenges. 
+                 I continuously seek opportunities to expand my skills and grow professionally in the tech industry.</p>
+         <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+         </div>  
+         <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>Front-End</span><br>HTML CSS JavaScript</li>
+                <li><span>Backend</span><br>JAVA</li>
+                <li><span>Database</span><br>SQL</li>
+                <li><span>Github</span></li>
+            </ul>
+         </div>      
+         <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>June 2023</span><br>Web Development Internship at Sparks foundation,Singapore.</li>
+                <li><span>June 2023</span><br>Artificial Intelligence and Machine Learning at Annamalai Innovation and Incubation Research Foundation,Annamalai University.</li>
+                <li><span>June 2024</span><br>Full stack Development at Shiash Info Tech Solutions Pvt ltd,Chennai.<br></li>
+                <li><span>Present</span><br>MERN stack at Tech Vaseergrah,Thanjavur.</li>
+            </ul>
+         </div>  
+         <div class="tab-contents" id="education">
+            <ul>
+                <li><span>Present</span><br>BE Computer Science And Engineering(Honors) at Annamalai University.</li>
+                <li><span>2019-2021</span><br>Higher Secondary at Sacred Heart Girls' Higher Secondary School.<br></li>
+            </ul>
+         </div>  
+        </div>
+    </div>
+  </div>
+  </div>
+ <!-- ------services-------- -->
+<!-- <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+         <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web design</h2>
+                <p>hebfryugfyefbqwjhefwqljfhlqrey</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web design</h2>
+                <p>hebfryugfyefbqwjhefwqljfhlqrey</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-star"></i>
+                <h2>Web design</h2>
+                <p>hebfryugfyefbqwjhefwqljfhlqrey</p>
+                <a href="#">Learn more</a>
+            </div>
+         </div> 
+    </div>
+</div> -->
+<!----------------portfolio------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="w1.png" >
+                <div class="layer">
+                    <h3>QR-Enhanced Warehouse Management</h3>
+                    <p>Enables real-time data retrieval, reducing time spent on manual verification and record-keeping.
+                    </p>
+                    <a href="https://github.com/Devasundari/ShiashIntern"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="w2.png" >
+                <div class="layer">
+                    <h3>Basic Banking System</h3>
+                    <p>Developed a dynamic web application to simulate basic banking operations, enabling secure money transfers
+                        between 5 dummy users.
+                    </p>
+                    <a href="https://github.com/Devasundari/Sparks"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="w3.png" >
+                <div class="layer">
+                    <h3>Payment Gateway Integration for Donations</h3>
+                    <p>Developed a web application to facilitate donations to orphanages through a secure payment gateway integration.
+                    </p>
+                    <a href="https://github.com/Devasundari/Sparks"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+<!--------------contact--------------->
+<div id="contact">
+    <div class="comtainer">
+        <div class="row">
+            <div class="contact-left"> 
+              <h1 class="sub-title">Contact Me</h1>
+              <a href="sundarideva245@gmail.com"><i class="fa-sharp fa-solid fa-paper-plane"></i>sundarideva245@gmail.com</a>
+              <p><i class="fa-solid fa-phone"></i>8015405836</p>
+              <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/_devasundari_?igsh=MW44NW15dzM4dm9jOQ=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/devasundari-senthilkumar/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="Email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+           <a href="" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright&#169<i class="fa-solid fa-heart"></i> by me</p>
+    </div>
+</div>
+
+
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script> 
+ <!------sidemenu--------->
+ <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+ </script>
+ <script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbwcGscBh4_Mqr5hUu8NJNlNUjti32NeHJKwrVq5J0bnRDVnH_WbBMfPdiiO1dI4B7nb/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
