@@ -178,27 +178,41 @@ nav{
     padding:50px 0;
 
 }
-.work-list{
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(3, 1fr); /* Ensures exactly 3 items per row */
     grid-gap: 40px;
     margin-top: 50px;
 }
-.work{
+
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-.work img{
+
+.work {
+    position: relative;
     width: 100%;
+    height: 250px; /* Set a uniform height for all work items */
+    overflow: hidden; /* Ensures no overflow issues */
+    border-radius: 10px;
+}
+
+.work img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the block evenly */
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
-.layer{
+
+
+.layer {
     width: 100%;
     height: 0;
-    background:linear-gradient(rgba(0,0,0,0.6),#ff004f) ;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -211,44 +225,67 @@ nav{
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
-    transition:height 0.5s ;
+    transition: height 0.5s;
 }
-.layer h3{
-    font-weight:500;
+
+.layer h3 {
+    font-weight: 500;
     margin-bottom: 20px;
 }
-.layer a{
+
+.layer a {
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
     background: #fff;
-    width:60px;
+    width: 60px;
     height: 60px;
     border-radius: 50%;
     text-align: center;
 }
-.work:hover img{
-   transform: scale(1.1);
+
+.work:hover img {
+    transform: scale(1.1);
 }
-.work:hover .layer{
+
+.work:hover .layer {
     height: 100%;
 }
-.btn{
+
+/* Initially hide extra works */
+.work:nth-child(n+4) {
+    display: none;
+}
+
+/* Show hidden works when .show-more class is applied */
+.work-list.show-more .work {
+    display: block;
+}
+
+/* Centering the button */
+.btn {
     display: block;
     margin: 50px auto;
-    width:fit-content;
+    width: fit-content;
     border: 1px solid #ff004f;
-    padding:14px 50px;
+    padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
-    transition: background 0.5s
+    transition: background 0.5s;
+    cursor: pointer;
 }
-.btn:hover{
+
+.btn:hover {
     background: #ff004f;
 }
+
+.hidden-work {
+    display: none;
+}
+
 /*------------contact------------*/
 .contact-left{
     flex-basis: 35%;
